@@ -1,0 +1,7 @@
+* En la configuración del controlador, la opción para habilitar/deshabilitar la pinza no sirve, y la de joint/XYZ mode tampoco. [La de la pinza ahora sí debería servir. En cualquier caso, hay que comprobar ambas, pero ahora sí deberían servir las dos.]
+* Hay problemas al conectar signals y slots:
+  QMetaObject::connectSlotsByName: No matching signal for on_actionApplyConfiguration_triggered()
+  QMetaObject::connectSlotsByName: No matching signal for on_actionRevertConfiguration_triggered()
+  QMetaObject::connectSlotsByName: No matching signal for on_actionCloseConfiguration_triggered()
+* El programa se queda colgado cuando se intenta salir, y la única forma de cerrarlo es matar el proceso (pero sólo pasa a veces).
+* Las funciones "moveMotor" tienen un error: hay que convertir los ángulos a pasos y los pasos a grados [está corregido, pero conviene revisar que está bien hecho].

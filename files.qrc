@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>files/mark-iv-commands.html</file>
+        <file>files/mark-iv-commands.pdf</file>
+        <file>files/mark-iv-error-codes.txt</file>
+    </qresource>
+</RCC>

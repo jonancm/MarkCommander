@@ -1,0 +1,3 @@
+* Supuestamente, debería poderse parar el timer de polling una vez se recibe el Carriage Return del controlador.
+* Añadir una barra de progreso a la barra de estado para indicar que se está esperando la respuesta del controlador.
+* Corregir el control manual en el espacio de las articulaciones para que sea más fluido.

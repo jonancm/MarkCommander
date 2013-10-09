@@ -1,0 +1,19 @@
+Initial commit of MarkCommander.
+
+This is the source code for the MarkCommander application as it was handed
+in for the Robotics course at ULPGC. This version is the full GUI with
+icons, and provides the following functionality:
+
+* Terminal for sending raw commands to the Mark IV controller.
+* Direct kinematics solving, for positioning the end effector by providing
+  the joint angles.
+* Inverse kinematics solving, for positioning the end effector by
+  providing the coordinates of the TCP (Tool Center Point) and a rotation
+  matrix that expreses the orientation of the end effector.
+* Configuration dialog for configuring the Mark IV controller.
+
+This version of the application may still have some errors, particularly
+in the inverse kinematics, but does a fairly good job and is quite usable.
+
+The code has been licensed under the terms of the Apache License.
+

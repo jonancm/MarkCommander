@@ -1,0 +1,105 @@
+#######################################################################
+#                            COMMAND ERRORS
+#######################################################################
+
+INV_CMD      10    Invalid command
+PAR_OUT      11    Parameter out of bounds
+MIS_PAR      12    Missing parameter
+NO_DLIM      13    Expected delimiter not seen
+TOO_MNY      14    Command string too long
+TP_ACTV      16    The teach pendant is active or busy
+
+#######################################################################
+#                         COMMUNICATION ERRORS
+#######################################################################
+
+HST_OVF      20    Host input buffer overflow
+HST_TMO      21    Host USART timed out
+HST_ERR      22    Host USART error (framing, parity, etc.)
+TP_OVF       23    Teach pendant input buffer overflow
+TP_TMO       24    Teach pendant USART timed out
+TP_ERRO      25    Teach pendant USART error (framing, parity, etc.)
+TP_OVRN      26    Teach pendant USART overrun
+HST_OVR      27    Host USART overrun
+
+#######################################################################
+#                          DIAGNOSTIC ERRORS
+#######################################################################
+
+BAD_RAM      30    Bad RAM location
+TP_ERR       32    Teach pendant returned diagnostic error
+NO_TP        34    Teach pendant not present
+
+#######################################################################
+#                    TEACH PENDANT PROGRAM ERRORS
+#######################################################################
+
+LAB_ERR      40    Missing label
+NO_PGRM      41    No program in memory
+MEM_FUL      42    Insufficient teach pendant memory
+EPM_FUL      43    Insufficient EEPROM memory
+RPL_ERR      44    Can't replace first record
+PROGRAM      45    A pendant program already exists
+
+#######################################################################
+#                          EXECUTION ERRORS
+#######################################################################
+
+HRD_ERR      50    Hard home routine failed
+NO_HARD      51    Hard home not set
+NO_SOFT      52    Soft home not set
+AR_OVFL      53    Arithmetic overflow
+TRG_ERR      54    Trig function return error
+STK_ERR      55    Error stack overflow
+BUSY         56    Still executing a trapezoidal move
+NO_MOTR      57    Inactive motor referenced
+MOV_DAT      58    Insufficient move data (velocity or acceleration = 0)
+BAD_MOD      59    Improper motor mode for command
+NO_A_SW      60    Limit switch A not found
+NO_B_SW      61    Limit switch B not found
+NO_C_SW      62    Limit switch C not found
+NO_D_SW      63    Limit switch D not found
+NO_E_SW      64    Limit switch E not found
+NO_F_SW      65    Limit switch F not found
+NO_G_SW      66    Limit switch G not found
+NO_H_SW      67    Limit switch H not found
+IMODE        69    Interpolation move out of bounds
+POS_OUT      70    XYZ position out of bounds
+STK_A_S      80    Limit switch A stuck
+STK_B_S      81    Limit switch B stuck
+STK_C_S      82    Limit switch C stuck
+STK_D_S      83    Limit switch D stuck
+STK_E_S      84    Limit switch E stuck
+STK_F_S      85    Limit switch F stuck
+STK_G_S      86    Limit switch G stuck
+STK_H_S      87    Limit switch H stuck
+INV_RBT      91    Invalid robot type specifier
+INV_MOT      92    Invalid motor specifier
+INV_CTL      93    Invalid controller type
+INV_PND      94    Invalid pendant mode
+STOP         95    Emergency stop
+INV_XYZ      96    Invalid xyz specifier
+XYZ_PAR      97    Invalid xyz parameter
+
+#######################################################################
+#                            MOTOR ERRORS
+#######################################################################
+
+A_STALL     100    Motor A stalled
+B_STALL     101    Motor B stalled
+C_STALL     102    Motor C stalled
+D_STALL     103    Motor D stalled
+E_STALL     104    Motor E stalled
+F_STALL     105    Motor F stalled
+G_STALL     106    Motor G stalled
+H_STALL     107    Motor H stalled
+A_CURLIM    110    Motor A's current limit circuit was activated
+B_CURLIM    111    Motor B's current limit circuit was activated
+C_CURLIM    112    Motor C's current limit circuit was activated
+D_CURLIM    113    Motor D's current limit circuit was activated
+E_CURLIM    114    Motor E's current limit circuit was activated
+F_CURLIM    115    Motor F's current limit circuit was activated
+G_CURLIM    116    Motor G's current limit circuit was activated
+H_CURLIM    117    Motor H's current limit circuit was activated
+I_CURLIM    118    Aux Port 1's current limit circuit was activated
+J_CURLIM    119    Aux Port 2's current limit circuit was activated
