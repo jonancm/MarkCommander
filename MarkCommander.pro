@@ -9,28 +9,28 @@ QT       += core gui webkit
 TARGET = MarkCommander
 TEMPLATE = app
 
+SOURCES += \
+	src/terminal.cpp \
+	src/rhino_xr4.cpp \
+	src/rhinoprog.cpp \
+	src/rhinolang.cpp \
+	src/matrix.cpp \
+	src/mainwindow.cpp \
+	src/main.cpp \
+	src/exception.cpp \
+	src/errorcodes.cpp \
+	src/cmdlineedit.cpp
 
-SOURCES += main.cpp\
-        mainwindow.cpp \
-    exception.cpp \
-    errorcodes.cpp \
-    terminal.cpp \
-    rhinolang.cpp \
-    cmdlineedit.cpp \
-    rhinoprog.cpp \
-    rhino_xr4.cpp \
-    matrix.cpp
-
-HEADERS  += \
-    rhino_xr4.hpp \
-    matrix.hpp \
-    cmdlineedit.hpp \
-    errorcodes.hpp \
-    exception.hpp \
-    mainwindow.hpp \
-    rhinolang.hpp \
-    rhinoprog.hpp \
-    terminal.hpp
+HEADERS += \
+	src/terminal.hpp \
+	src/rhino_xr4.hpp \
+	src/rhinoprog.hpp \
+	src/rhinolang.hpp \
+	src/matrix.hpp \
+	src/mainwindow.hpp \
+	src/exception.hpp \
+	src/errorcodes.hpp \
+	src/cmdlineedit.hpp
 
 FORMS    += mainwindow.ui
 
