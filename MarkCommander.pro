@@ -40,10 +40,17 @@ RESOURCES += \
 
 INCLUDEPATH += ../qextserialport/src
 
-LIBS += -L../qextserialport-build-desktop-Qt_4_8_3_in_PATH__System__Release -lqextserialport
-#LIBS += -L../qextserialport/src-build-desktop/build -lqextserialport1
-#macx:LIBS += -L../qextserialport-build-desktop-Desktop_Qt_4_7_4_for_GCC__Qt_SDK__Debug/src/build -lqextserialportd
-#macx:LIBS += -L../qextserialport-build-desktop-Desktop_Qt_4_7_4_for_GCC__Qt_SDK__Release/src/build -lqextserialport
+win32 {
+	LIBS += -L../qextserialport-build-desktop/release -lqextserialport1
+} else:macx {
+	debug {
+		LIBS += -L../qextserialport-build-desktop-Desktop_Qt_4_7_4_for_GCC__Qt_SDK__Debug/src/build -lqextserialportd
+	} else {
+		LIBS  += -L../qextserialport-build-desktop-Desktop_Qt_4_7_4_for_GCC__Qt_SDK__Release/src/build -lqextserialport
+	}
+} else:unix {
+	LIBS  += -L../qextserialport-build-desktop-Qt_4_8_3_in_PATH__System__Release -lqextserialport
+}
 
 win32:RC_FILE = MarkCommander.rc
 macx:ICON = appicon.icns
