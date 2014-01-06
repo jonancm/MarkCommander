@@ -11,3 +11,6 @@ ExternalProject_Add (qextserialport
                      CONFIGURE_COMMAND "qmake"
                      INSTALL_COMMAND ""
                      BUILD_IN_SOURCE 1)
+
+ExternalProject_Get_Property(qextserialport source_dir)
+include_directories(${source_dir}/src)
